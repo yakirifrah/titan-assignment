@@ -16,11 +16,10 @@ A Rest API application
 
 1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/yakirifrah/voyantis-home-assignment.git
-```
+      git clone [https://github.com/yakirifrah/titan-assignment](https://github.com/yakirifrah/titan-assignment.git)
 
-2. npm install && npm run dev:start
+
+2.  npm install && npm run dev:start
 
 ### GET `/api/image-list/:{count}`
 
