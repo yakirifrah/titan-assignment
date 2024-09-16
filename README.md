@@ -1,23 +1,52 @@
-# titna task
-A Rest API  
+# **TITAN Senior Full Stack Home Assignment**
+This is a REST API . The project includes several endpoints that interact with the Pixabay API, store orders in a database, and retrieve them for specific users.
 
+## **Technologies Used**
 
-## API Endpoints
+- **Backend**: Node.js with TypeScript
+- **Database**: MongoDB (with Mongoose)
+- **External API**: Pixabay API
+- **HTTP Client**: Axios
+- **Server Framework**: Express.js
 
-
-## Tech Stack
-- **Backend:** Node.js, TypeScript, Express.
-- **DB:** MongoDB, mongoose.
-- 
+  
+  
 ## Installation
 
-1. **Clone the Repository:**
+### **1. Clone the Repository**
 
-      git clone [https://github.com/yakirifrah/titan-assignment](https://github.com/yakirifrah/titan-assignment.git)
+```bash
+git clone https://github.com/yourusername/titan-assignment.git
+cd titan-assignment
+```
 
 
-2.  npm install && npm run dev:start
+### **2. Install Dependencies**
 
+```bash
+npm i
+```
+
+### **3.Run the Project**
+
+```bash
+npm run start:dev
+```
+
+## Project Structure
+
+```bash
+├── src
+│   ├── controllers         # Business logic
+│   ├── models              # Database models
+│   ├── routes              # API routes
+│   ├── utils               # Helper functions (Pixabay API integration)
+│   └── server.ts            # Main entry point
+├── package.json
+└── tsconfig.json           # TypeScript configuration
+```
+
+## API Endpoints
 ### GET `/api/image-list/:{count}`
 
 - **Description**: Endpoint that gets a number and returns a list of random photo URLs.
@@ -51,3 +80,6 @@ address, image URLs, frame color, user.
 - **Response**:
   - `200 OK`: Returns all orders from DB.
   - `400 No Content`: Failed to fetch orders.****
+
+ 
+  
