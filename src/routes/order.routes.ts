@@ -4,5 +4,5 @@ const router = Router()
 
 router.post('/order', createOrder)
 router.get('/order', getAllOrders)
-router.get('/orders/:useId', getOrdersByUseId)
+router.get('/orders/:userId', getOrdersByUseId)
 export default router

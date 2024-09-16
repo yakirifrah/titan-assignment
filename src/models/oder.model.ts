@@ -6,7 +6,6 @@ export interface Order {
   fullAddress: string
   imageUrls: string[]
   frameColor: string
-  user: string // Assuming User is userId
 }
 
 export interface OrderDocument extends Order, Document {}

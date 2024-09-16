@@ -6,7 +6,7 @@ const createOrder = async (req: Request, res: Response) => {
   const { email, fullName, fullAddress, imageUrls, frameColor, user: userId } = req.body
   try {
     // Find the user by userId
-    const user = await User.findById(userId)
+    const user = await User.findOne({userId})
     if (!user) {
       return res.status(404).json({ error: 'User not found' })
     }
@@ -40,12 +40,12 @@ const getOrdersByUseId = async (req: Request, res: Response) => {
   const userId = req.params.userId
   try {
     // Check if the user exists
-    const user = await User.findById(userId)
+    const user = await User.findOne({userId})
     if (!user) {
       return res.status(404).json({ error: 'User not found' })
     }
 
-    const orders = await Order.find({ user: userId })
+    const orders = await Order.find({  user:user._id })
     res.json(orders)
   } catch (error) {
     console.error('Error fetching orders:', error)
