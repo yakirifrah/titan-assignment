@@ -1,3 +1,4 @@
+
 # **TITAN Senior Full Stack Home Assignment**
 This is a REST API . The project includes several endpoints that interact with the Pixabay API, store orders in a database, and retrieve them for specific users.
 
@@ -27,11 +28,20 @@ cd titan-assignment
 npm i
 ```
 
-### **3.Run the Project**
+### **3 .Run the Project**
 
 ```bash
 npm run start:dev
 ```
+
+## Important information
+
+User id for local environment
+
+```bash
+11111111, 22222222, 33333333
+```
+[postman collection](https://github.com/yakirifrah/titan-assignment/blob/main/titan-assignment.postman_collection.json)
 
 ## Project Structure
 
