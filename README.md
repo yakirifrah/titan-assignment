@@ -21,9 +21,9 @@ A Rest API
 ### GET `/api/image-list/:{count}`
 
 - **Description**: Endpoint that gets a number and returns a list of random photo URLs.
-- **Request params**: count for determine the number of results per page Accepted values: 3 - 200.
+- **Request params**: count to determine the number of results per page Accepted values: 3 - 200.
 - **Response**:
-  - `200 OK`: Message successfully fetch the array of page urls.
+  - `200 OK`: Message successfully fetches the array of page urls.
 
 ### POST `/api/order`
 
@@ -31,8 +31,8 @@ A Rest API
 - **Request Body**:
   - `body` . email, fullName, fullAddress, imageUrls, frameColor, user: userId
 - **Response**:
-  - `200 OK`: Return the created order JSON. The details: email, full name, full
-address, images URLs, frame color, user.
+  - `200 OK`: Return the created order JSON. The details are as follows: email, full name, full
+address, image URLs, frame color, user.
   - `400 No Content`: Failed to create order.
  
   
@@ -40,7 +40,7 @@ address, images URLs, frame color, user.
 
 - **Description**: Retrieve all orders.
 - **Response**:
-  - `200 OK`: Returns all order from DB.
+  - `200 OK`: Returns all orders from DB.
   - `400 No Content`: Failed to fetch orders.
  
   
@@ -49,5 +49,5 @@ address, images URLs, frame color, user.
 - **Description**: Retrieve all orders by userId.
 - **Request params**: userId
 - **Response**:
-  - `200 OK`: Returns all order from DB.
+  - `200 OK`: Returns all orders from DB.
   - `400 No Content`: Failed to fetch orders.****
