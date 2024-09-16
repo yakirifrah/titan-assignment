@@ -1,6 +1,26 @@
 # titna task
 A Rest API application 
+
+
+
+
+
 ## API Endpoints
+
+
+## Tech Stack
+- **Backend:** Node.js, TypeScript, Express.
+- **DB:** MongoDB, mongoose.
+- 
+## Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yakirifrah/voyantis-home-assignment.git
+```
+
+2. npm install && npm run dev:start
 
 ### GET `/api/image-list/:{count}`
 
