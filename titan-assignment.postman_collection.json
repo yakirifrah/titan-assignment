@@ -48,7 +48,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3001/api/order/:userId",
+					"raw": "http://localhost:3001/api/orders/:userId",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -56,13 +56,13 @@
 					"port": "3001",
 					"path": [
 						"api",
-						"order",
+						"orders",
 						":userId"
 					],
 					"variable": [
 						{
 							"key": "userId",
-							"value": "12345678"
+							"value": "11111111"
 						}
 					]
 				}
