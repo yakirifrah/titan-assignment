@@ -1,8 +1,5 @@
 # titna task
-A Rest API application 
-
-
-
+A Rest API  
 
 
 ## API Endpoints
